@@ -12,7 +12,7 @@ mainApp.controller('DemoController', function ($scope, $location, $resource) {
     });
     //
     $scope.selectedUsers = [];
-    //
+    //V
     $scope.$watchCollection('selectedUsers', function () {
         $scope.selectedUser = angular.copy($scope.selectedUsers[0]);
     });
