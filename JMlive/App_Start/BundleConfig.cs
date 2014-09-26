@@ -8,12 +8,10 @@ namespace JMlive
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
-
+            //
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
@@ -55,9 +53,9 @@ namespace JMlive
 
             bundles.Add(new StyleBundle("~/Content/themes/sample/css").Include("~/Content/themes/sample/main.css"));
 
-            bundles.Add(new StyleBundle("~/Content/themes/sample/font-awesome/css").Include("~/Content/themes/sample/font-awesome/css/font-awesome.css"));
+            bundles.Add(new StyleBundle("~/Content/font-awesome/css").Include("~/Content/font-awesome/css/font-awesome.min.css"));
 
-            bundles.Add(new StyleBundle("~/Content/themes/sample/weather-icons/css").Include("~/Content/themes/sample/weather-icons/css/weather-icons.css"));
+            bundles.Add(new StyleBundle("~/Content/weather-icons/css").Include("~/Content/weather-icons/css/weather-icons.min.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
